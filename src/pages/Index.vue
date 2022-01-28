@@ -29,10 +29,10 @@
             {{ props.row.email }}
           </q-td>
           <q-td key="edit" :props="props">
-            <q-btn color="yellow" @click="openEditUser(props.row._id)" label="Editar" />
+            <q-btn outline rounded icon="edit" color="orange" @click="openEditUser(props.row._id)" />
           </q-td>
           <q-td key="delete" :props="props">
-            <q-btn color="red" @click="openDeleteUser(props.row)" label="Delete" />
+            <q-btn outline rounded icon="delete" color="red" @click="openDeleteUser(props.row)" />
           </q-td>
         </q-tr>
       </template>
